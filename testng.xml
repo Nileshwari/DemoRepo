@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="2" name="EComm Suite" annotations="JDK" parallel="tests" verbose="5" >
+      
+      <listeners>
+      <listener class-name="main.java.listeners.ExtendReportListener"/>
+      <listener class-name="main.java.listeners.CustomListener"/>
+      </listeners>   
+
+	  <test name="BrandForLess chrome" parallel="methods" thread-count="5">
+	  	
+	  	<parameter name="browser" value="chrome"/>
+	  	<parameter name="testUrl" value="https://www.brandsforless.ae/en-ae/"/>
+	  	
+		 <classes>
+		   <class name="test.java.ecom.brandForLess.HomePageTest"/>
+		   <!--  
+		   <class name="test.java.HomePageTest"/>
+		   <class name="test.java.HomePageTest"/>
+		   -->
+		 </classes>
+	   </test>
+	   
+	  <test name="CRM chrome" parallel="methods" thread-count="5">
+	  	<parameter name="browser" value="chrome"/>
+	  	<parameter name="testUrl" value="https://www.brandsforless.ae/en-ae/"/>
+		 <classes>
+		   <class name="test.java.crm.HomePageTest"/>
+	<!--
+ <class name="test.java.crm.LoginPageTest"/>
+ <class name="test.java.crm.ContactPageTest"/>
+ <class name="test.java.crm.NewContactPageTest"/>  
+	-->	 
+		 </classes>
+	   </test>
+<!--
+Working fine
+	  <test name="DragDrop chrome" parallel="methods" thread-count="5">
+	  	<parameter name="browser" value="chrome"/>
+		 <classes>
+		   <class name="test.java.DragDropFeatureTest"/>
+		 </classes>
+	   </test>
+-->   
+
+ 
+</suite>

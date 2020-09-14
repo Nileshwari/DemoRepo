@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [EComm Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="main.java.listeners.ExtendReportListener"/>
+    <listener class-name="main.java.listeners.CustomListener"/>
+  </listeners>
+  <test thread-count="2" verbose="5" name="BrandForLess chrome(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="testUrl" value="https://www.brandsforless.ae/en-ae/"/>
+    <classes>
+      <class name="test.java.ecom.brandForLess.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="verifyHomePageHeaderTest"/>
+          <include name="verifyHomePageLogoExistsTest"/>
+        </methods>
+      </class> <!-- test.java.ecom.brandForLess.HomePageTest -->
+    </classes>
+  </test> <!-- BrandForLess chrome(failed) -->
+  <test thread-count="2" verbose="5" name="CRM chrome(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="testUrl" value="https://www.brandsforless.ae/en-ae/"/>
+    <classes>
+      <class name="test.java.crm.HomePageTest">
+        <methods>
+          <include name="verifyCalendarLinkTest"/>
+          <include name="setUpTest"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="verifyDeleteButtonTest"/>
+          <include name="tearDown"/>
+          <include name="verifyContactsLinkTest"/>
+        </methods>
+      </class> <!-- test.java.crm.HomePageTest -->
+    </classes>
+  </test> <!-- CRM chrome(failed) -->
+</suite> <!-- Failed suite [EComm Suite] -->

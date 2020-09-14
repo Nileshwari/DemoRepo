@@ -1,0 +1,9 @@
+test/java/ecom/brandForLess/HomePageTest.class
+test/java/crm/HomePageTest.class
+test/java/crm/ContactPageTest.class
+test/java/crm/NewContactPageTest.class
+test/java/EcomBasePageTest.class
+test/java/crm/LoginPageTest.class
+test/java/DragDropFeatureTest.class
+test/java/BasePageTest.class
+test/java/CrmBasePageTest.class

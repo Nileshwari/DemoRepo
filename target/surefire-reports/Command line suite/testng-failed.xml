@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="test.java.crm.ContactPageTest">
+        <methods>
+          <include name="setUpTest"/>
+          <include name="tearDown"/>
+          <include name="validateCreateNewContactButton"/>
+        </methods>
+      </class> <!-- test.java.crm.ContactPageTest -->
+      <class name="test.java.crm.LoginPageTest">
+        <methods>
+          <include name="setUpTest"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginTest"/>
+          <include name="verifyLoginPageTitleTest"/>
+        </methods>
+      </class> <!-- test.java.crm.LoginPageTest -->
+      <class name="test.java.crm.HomePageTest">
+        <methods>
+          <include name="verifyCalendarLinkTest"/>
+          <include name="setUpTest"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="verifyDeleteButtonTest"/>
+          <include name="tearDown"/>
+          <include name="verifyContactsLinkTest"/>
+        </methods>
+      </class> <!-- test.java.crm.HomePageTest -->
+      <class name="test.java.crm.NewContactPageTest">
+        <methods>
+          <include name="setUpTest"/>
+          <include name="validateCreateNewContact"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.java.crm.NewContactPageTest -->
+      <class name="test.java.ecom.brandForLess.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="verifyHomePageHeaderTest"/>
+          <include name="verifyHomePageLogoExistsTest"/>
+        </methods>
+      </class> <!-- test.java.ecom.brandForLess.HomePageTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
